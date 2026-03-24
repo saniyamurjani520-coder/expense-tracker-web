@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Expense Tracker</title>
+    <style>
+        body { font-family: Arial; text-align: center; }
+        input { margin: 5px; padding: 8px; }
+        button { padding: 8px 15px; background: green; color: white; border: none; }
+    </style>
+</head>
+<body>
+
+    <h2>Add Expense</h2>
+
+    <form action="/add" method="post">
+        <input type="text" name="name" placeholder="Name"><br><br>
+        <input type="number" name="amount" placeholder="Amount"><br><br>
+        <input type="text" name="category" placeholder="Category"><br><br>
+        <input type="text" name="date" placeholder="YYYY-MM-DD"><br><br>
+        <button type="submit">Add</button>
+    </form>
+
+    <br>
+    <a href="/show">View Expenses</a>
+
+</body>
+</html>
